@@ -149,6 +149,7 @@ module Ruhoh::Views
 
           page_layouts << layout
         end
+        page_layouts.each {|layout| @page_data.merge!(layout.data)}
         page_layouts
       end
     end
